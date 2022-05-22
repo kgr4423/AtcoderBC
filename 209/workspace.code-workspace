@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\.."
+		},
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\htmlcss"
+		},
+		{
+			"path": "..\\..\\..\\java_code"
+		},
+		{
+			"path": "..\\..\\..\\..\\texts"
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\Users\\KukitaHikaru\\Documents\\大学授業教材\\3年秋\\41-数値解析"
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\Users\\KukitaHikaru\\OneDrive - 筑波大学\\作業用フォルダ"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp",
+			"ostream": "cpp",
+			"xstddef": "cpp"
+		}
+	}
+}
