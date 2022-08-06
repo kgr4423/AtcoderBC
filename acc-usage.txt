@@ -1,0 +1,15 @@
+atcoder-cliの使い方
+
+「$ acc new abc101」で対応することコンテスト用のディレクトリを作成
+
+abc101ディレ内の例えばaディレでmain.cppを作成してそこで問題を解く 
+
+
+//コンパイル
+//$ g++ main.cpp
+
+//テスト
+//$ oj t -d tests
+
+//提出
+//$acc submit main.cpp
