@@ -1,39 +1,32 @@
 #include <bits/stdc++.h>
 using namespace std;
-using ll = long long;
+ 
 int main() {
-  int n;
-  cin>>n;
-  ll ans=0;
-  vector<vector<ll>> a(n,vector<ll>(n));
-  for(int i=0;i<n;i++){
-    for(int j=0;j<n;j++){
-      char c;
-      cin>>c;
-      a[i][j]=c-'0';
+ 
+  // int型の2次元配列(3×4要素の)の宣言
+  vector<vector<int>> data(3, vector<int>(4));
+ 
+  // 入力 (2重ループを用いる)
+  for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 4; j++) {
+      cin >> data.at(i).at(j);
     }
   }
-  vector<int> p={1,1,1,0,0,-1,-1,-1},q={1,0,-1,1,-1,1,0,-1};
-  for(int i=0;i<n;i++){
-    for(int j=0;j<n;j++){
-      for(int k=0;k<8;k++){
-        ll now=0;
-        ll x=i,y=j;
-        for(int l=0;l<n;l++){
-          now*=10;
-          now+=a[x][y];
-          x+=p[k];
-          y+=q[k];
-          x%=n;
-          x+=n;
-          y%=n;
-          y+=n;
-          x%=n;
-          y%=n;
-        }
-        ans=max(ans,now);
+ 
+  // 0の個数を数える
+  int count = 0;
+ 
+  for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 4; j++) {
+ 
+      // 上からi番目、左からj番目の画素が0かを判定
+      if (data.at(i).at(j) == 0) {
+        count++;
       }
+ 
     }
   }
-  cout<<ans<<endl;
+ 
+   cout << count << endl;
+ 
 }

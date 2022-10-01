@@ -24,6 +24,27 @@ int main(){
     }
 
     //主処理
+    vector<int> record(w2);
+    for(int i=0; i<w1-w2+1; ++i){
+        for(int j=0; j<h1-h2+1; ++j){
+            if(A.at(i).at(j) == B.at(0).at(0)){
+                record.at(0) = j;
+                for(int k=1; k<w2; ++k){
+                    for(int l=j+1; l<h1-h2+2; ++l){
+                        if(A.at(i).at(l) == B.at(0).at(k)){
+                            record.at(k) = l;
+                            break;
+                        }
+                    }
+                }
+                for(int m=1; m<w2; ++m){
+                    for(int n=0; n<w2; ++n){
+                        if(A.at(m).at(record.at(n)) == B.at(m).at(record.at(n)))
+                    }
+                }
+            }
+        }
+    }
     
 
 
